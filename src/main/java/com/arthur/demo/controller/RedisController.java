@@ -1,6 +1,6 @@
 package com.arthur.demo.controller;
 
-import com.arthur.demo.domain.User;
+import com.arthur.demo.entity.User;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

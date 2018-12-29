@@ -1,6 +1,6 @@
 package com.arthur.demo;
 
-import com.arthur.demo.domain.User;
+import com.arthur.demo.entity.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,9 +32,9 @@ public class TestRedis {
     @Test
     public void testObj() throws Exception {
         User user = new User();
-        user.setName("wangss");
-        user.setAddress("123");
-        user.setAddress("18");
+        user.setUserName("wangss");
+        user.setPassword("123");
+        user.setAge(18);
 
         ValueOperations<String, User> vo = redisTemplate.opsForValue();
         vo.set("com.user", user);
